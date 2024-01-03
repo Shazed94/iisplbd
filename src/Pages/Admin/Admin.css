@@ -1,0 +1,126 @@
+/* ================= Admin section CSS ====================== */
+
+/* Jodit Status Bar */
+.jodit-status-bar {
+  visibility: hidden;
+}
+
+.jodit-add-new-line:after,
+.jodit-add-new-line span {
+  display: none !important;
+}
+
+/* Header */
+.navbar-wrapper {
+  display: flex;
+  background: #53746e;
+  padding: 21px 30px;
+  flex-wrap: wrap;
+  transition: all 0.5s cubic-bezier(0.4, -0.25, 0.25, 1.1);
+}
+
+.fullscreen-btn svg {
+  cursor: pointer;
+}
+
+.fa-icon {
+  margin-right: 15px;
+  color: #f3f5f7;
+  font-size: 23px;
+}
+
+/* middle section */
+
+.body-wrapper .card .card-body .card-header {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.125);
+}
+
+.body-wrapper .card .card-body .card-title {
+  color: #53746e;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.body-wrapper .card .card-body .image-file {
+  font-size: 14px;
+}
+
+.body-wrapper .card .card-body .btn-submit,
+.admin__dashboard .btn-submit {
+  width: 60%;
+  padding: 8px 12px;
+  margin: 0 auto;
+  background-color: #031b4e;
+  color: white-#fff;
+  font-weight: 600;
+}
+
+.body-wrapper .card .form-control:focus {
+  border-color: #7367f0;
+  box-shadow: 0 3px 9px rgba(50, 50, 9, 0.05),
+    3px 4px 8px rgba(115, 103, 240, 0.1);
+}
+
+.body-wrapper .card .label {
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  color: #53746e;
+}
+
+/* Table styling */
+
+.table_wrapper {
+  /* max-height: 65vh;
+    overflow-y: scroll; */
+  scroll-behavior: smooth;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  vertical-align: middle;
+}
+
+.btn_danger {
+  background-color: rgb(173, 0, 0) !important;
+}
+
+.btn_submit {
+  padding: 8px 14px;
+}
+
+.login_btn.btn-primary:focus {
+  box-shadow: none !important;
+}
+
+.toast_msg {
+  margin-top: 50px;
+  color: #fff;
+}
+
+/* Footer */
+.copyright {
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 15px;
+  /* text-align: center; */
+  background: rgb(36, 36, 36);
+  height: 63px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.login_btn {
+  background-color: #000;
+  border: none;
+}
+
+/* Media Query */

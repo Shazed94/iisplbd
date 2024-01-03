@@ -1,0 +1,27 @@
+.topTitle_overlay img{
+    max-height: calc(100vh - 20px);
+}
+
+.topTitle_overlay a button{
+    padding: 0.75rem 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d0112b;
+    border: 1px solid #d0112b;
+}
+
+
+@media screen and (max-width: 767px){
+    .topTitle_overlay a button{
+        padding: 0.5rem 3rem;
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .topTitle_overlay a button{
+        padding: 0.75rem 4rem;
+        font-size: 14px;
+    }
+}

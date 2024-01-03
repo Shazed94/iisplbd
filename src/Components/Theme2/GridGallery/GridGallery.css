@@ -1,0 +1,32 @@
+.grid_gallery_overlay:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    opacity: .8;
+}
+
+.grid_gallery_overlay .title {
+    z-index: 2;
+    max-width: 250px;
+}
+
+.grid_gallery_overlay img {
+    height: 380px;
+    object-fit: cover;
+}
+
+.grid_gallery_overlay a button{
+    padding: 0.625rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d0112b;
+    border: 1px solid #d0112b;
+}
+
