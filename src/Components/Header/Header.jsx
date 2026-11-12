@@ -2,8 +2,9 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { TfiEmail, TfiLocationPin } from "react-icons/tfi";
-import logo from "../../assets/homepage/IISPL_logo.png";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/homepage/IISPL_logo.png";
+import { DownloadIcon } from "../SvgComponent";
 
 const Header = () => {
   // Burger menus
@@ -88,6 +89,14 @@ const Header = () => {
                 </h6>
               </div>
             </div>
+            <a
+              href="/static/media/our_profile.3cdecc6e7e55a13a0768.pdf"
+              download=""
+              className="group relative flex items-center text-[19px] font-medium tracking-[1px] mb-1 border rounded-lg px-3 py-2 h-fit bg-blue-400 text-white-#fff transition duration-300"
+            >
+              <DownloadIcon height="30px" fill="#fff" className="me-2" />{" "}
+              <span>Our Profile</span>
+            </a>
           </div>
 
           <div className="flex xl:hidden justify-between items-center">

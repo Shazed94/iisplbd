@@ -1,34 +1,34 @@
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 import {
-  HandSvg,
-  Technician,
-  Microscope,
-  Graph,
-  Globe,
-  Compass,
-  Microscope2,
+    Compass,
+    Globe,
+    Graph,
+    HandSvg,
+    Microscope,
+    Microscope2,
+    Technician,
 } from "../Components/SvgComponent";
 
+import axios from "axios";
 import { Fragment, useEffect, useState } from "react";
-import CountUpComponent from "../Components/CountUp";
 import {
-  Accordion,
-  AccordionItem,
-  AccordionItemButton,
-  AccordionItemHeading,
-  AccordionItemPanel,
+    Accordion,
+    AccordionItem,
+    AccordionItemButton,
+    AccordionItemHeading,
+    AccordionItemPanel,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
-import Header from "../Components/Header/Header";
+import CountUpComponent from "../Components/CountUp";
 import Footer from "../Components/Footer/Footer";
+import Header from "../Components/Header/Header";
 import { BACKEND_BASE_URL, fileUrl } from "../Utils/GlobalVariables";
-import axios from "axios";
 
 import { Link } from "react-router-dom";
 
-import { CircularDotLoader } from "../Components/Custom Loader/CustomLoader";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { CircularDotLoader } from "../Components/Custom Loader/CustomLoader";
 
 const HomePage = () => {
   document.title =
@@ -104,10 +104,10 @@ const HomePage = () => {
                   <SplideSlide key={i}>
                     <img src={`${fileUrl}${slider?.image}`} alt="slider" />
                     <div className="xl:container h-full flex flex-col justify-center">
-                      <h5 className="slider_subtitle text-light-blue-400  text-f14  font-semibold font-oswald uppercase mb-4 tracking-[2px] relative inline-block sm:mx-[15px] md:mx-[15px] lg:mx-[15px]">
+                      <h5 className="slider_subtitle text-light-blue-400  text-f14  font-semibold font-oswald uppercase mb-4 tracking-[2px] relative inline-block sm:mx-[15px] md:mx-[15px] lg:mx-[15px] [text-shadow:-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000,1px_1px_0_#000]">
                         Led By Passionate Experts
                       </h5>
-                      <h2 className="slider_title text-white-#fff text-f60 sm:text-f26 font-semibold font-oswald capitalize leading-[60px] sm:leading-[30px] mb-5  sm:mx-[15px] md:mx-[15px] lg:mx-[15px]">
+                      <h2 className="slider_title text-white-#fff text-f60 sm:text-f26 font-semibold font-oswald capitalize leading-[60px] sm:leading-[30px] mb-5  sm:mx-[15px] md:mx-[15px] lg:mx-[15px] [text-shadow:-2px_-2px_0_#000,2px_-2px_0_#000,-2px_2px_0_#000,2px_2px_0_#000] ">
                         IISPL Provides Best <br /> Inspection Services in
                         Bangladesh
                       </h2>
