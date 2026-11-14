@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+<h1 align="center">IISPL Bangladesh — Corporate Website</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="./src/assets/IISPL_logo.png" alt="IISPL Bangladesh logo" width="220" />
+</p>
 
-## Available Scripts
+<p align="center">
+  <strong>Inspection · Calibration · Testing · Training</strong>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="https://www.iisplbd.com/"><strong>Visit the live website →</strong></a>
+</p>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**IISPL Bangladesh (IIS Testing BD Pvt. Ltd.)** provides third-party inspection, calibration, testing, and technical training services to industrial projects and businesses.
 
-### `npm test`
+This repository contains the React frontend for the company's public website and content-management interface. It presents the company's services, shares articles and company information, and provides contact and inquiry forms.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Company, service, and contact pages.
+- Inspection, calibration, QA/QC, NDT/NDE, equipment safety, and training service information.
+- Specialized testing pages for environmental, stack-air, oil, and water testing.
+- Blog listing, featured articles, and article detail pages.
+- Client and organization/certification showcases.
+- Contact and service inquiry forms connected to the backend.
+- Protected administration pages for managing website content and reviewing messages.
+- Responsive layouts for desktop, tablet, and mobile screens.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technology
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Application:** React 18, React Router 6
+- **Styling and UI:** Bootstrap 5, React-Bootstrap, Tailwind CSS 3
+- **Other libraries:** Axios, React Helmet, React Icons, Splide, and React Image Gallery
+- **Development and production builds:** Create React App (`react-scripts` 5)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js and npm
+- Availability of the separate Laravel backend for dynamic content and form submissions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install and run
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm ci
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The development server opens at [http://localhost:3000](http://localhost:3000) and reloads when source files change.
 
-## Learn More
+### Available scripts
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Command | Description |
+|---|---|
+| `npm start` | Start the local development server. |
+| `npm test` | Run the Create React App test runner in watch mode. |
+| `npm run build` | Create an optimized production build in `build/`. |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Backend
 
-### Code Splitting
+Dynamic content and form submissions are provided by a separate project built with Laravel. That backend is not included in this repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Main Routes
 
-### Analyzing the Bundle Size
+### Public site
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `/` — Home
+- `/about-us` — Company information
+- `/services` — Service overview
+- `/services/...` — Inspection, testing, calibration, training, and specialized service pages
+- `/contacts` — Contact details and inquiry form
+- `/blog` and `/blog/:slug` — Articles
 
-### Making a Progressive Web App
+### Administration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `/admin/login` — Administration sign-in
+- `/admin/...` — Protected content-management pages
 
-### Advanced Configuration
+Administrative access requires valid credentials; credentials and the separate backend project are not included in this repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project Background
 
-### Deployment
+This company project was developed as part of the project team at **TRODAD International Ltd.** The live website is available at [iisplbd.com](https://www.iisplbd.com/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+All company names, trademarks, and website content belong to their respective owners.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  <strong>IISPL Bangladesh</strong><br />
+  Inspection · Calibration · Testing · Training
+</p>
